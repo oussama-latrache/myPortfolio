@@ -417,6 +417,35 @@ nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .home .container .text h5 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .home .container .text h3 {
+    font-size: 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .home .container .text h1 {
+    font-size: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .home .container .text p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .home .container .text h3 {
     font-size: 50px;
