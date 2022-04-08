@@ -14,7 +14,7 @@
 }
 
 body{
-    background-color:#1a1e2e;
+    background-color:#021124;
     background-size: cover;
 }
 
@@ -74,7 +74,7 @@ h3{
             border: 0.5px solid rgb(255, 255, 255);
             &:hover{
                 transform: translateY(-10px);
-                background:linear-gradient(-45deg , #FF006B,#d32e28);
+                background:linear-gradient(-45deg , #FF006B,#682cd6);
                 box-shadow: 4px 10px 20px 10px #00000044;
                 // filter: blur(1px);
             }
@@ -126,7 +126,7 @@ button.back{
         left: 0;
         width:0%;
         height: 100%;
-        background:linear-gradient(to left , #FF006B,#d32e28);
+        background:linear-gradient(to left , #FF006B,#682cd6);
         transition:.3s;
     }
     &:hover::before{
