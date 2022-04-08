@@ -168,7 +168,7 @@ html {
     display: block;
   }
   .header .container .logo {
-    width: 55px;
+    width: 90px;
   }
 }
 
@@ -371,6 +371,9 @@ nav a:hover {
 }
 
 @media (max-width: 1200px) {
+  .home {
+    margin-top: 50px;
+  }
   .home .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -443,6 +446,7 @@ nav a:hover {
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    font-size: 14px;
   }
 }
 
@@ -1453,6 +1457,11 @@ nav a:hover {
 .light-theme .home .text .flex-btn .second-btn {
   background: #021124;
   color: white;
+}
+
+.light-theme .home .text .flex-btn .second-btn:hover {
+  background: #FFB800;
+  color: #FF006B;
 }
 
 .light-theme .title-m {
