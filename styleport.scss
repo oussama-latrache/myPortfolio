@@ -6,16 +6,8 @@ $main-color:#051126;
 $secondary-color:#ffffffb7;
 $body-color:#021124;
 $before:#ffffff;
-// $hover:#FF006B,#FFB800;
 $hover:#FF006B,#682cd6;
 $white:white;
-// $main-color:#000000;
-// $secondary-color:#000000b7;
-// $body-color:#ffffff;
-// $before:#ff3150;
-// // $hover:#FF006B,#FFB800;
-// $hover:#FF006B,#d32e28;
-// $white:rgb(0, 0, 0);
 $pt:100px;
 $pb:100px;
 
@@ -98,22 +90,17 @@ html{
     }
 }
 .header{
-    // height: 50px;
     flex-wrap: wrap;
     background-color:#682cd63f;
     .container{
-        // padding: 30px;
         padding-top:5px;
         padding-bottom:5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .logo{
-            // display:flex;
             max-width: 100%;
-            width:100px;
-            // margin-top: 10px;
-            // margin-bottom   : 10px;
+            width: 100px;
         }
         .menu{
             display:none;
@@ -125,30 +112,25 @@ html{
             z-index: 9;
             
             li{
-                // display: flex;
                 margin: 0 30px 0;
                 transition:.3s;
                 a{
-                    // color: $main-color;
                     color:white;
                     font-size: 18px;
                     font-weight: 500;
                     font-family: 'Poppins', sans-serif;
                     &:hover{
                         transition: .3s;
-                        // color: $white;
                         color: #ff3150;
                         z-index: 999999;
                     }
                 }
             }
             li svg.moon{
-                // width:50px;
                 font-size: 27px;
                 color:#CD106E;
             }
             li svg.sun{
-                // width:50px;
                 font-size: 27px;
                 color:#682cd6;
             }
@@ -169,7 +151,7 @@ html{
         display: block;
     }
     .header .container .logo{
-        width: 55px;
+        width: 90px;
     }
 }
 
@@ -223,21 +205,13 @@ nav a:hover{
 }
 
 // HOME SECTION
-// .spline{
-//     width: 750px;
-//     height: 500px;
-//     overflow:hidden;
-// }
 .home .container{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    // overflow:hidden;
     .images{
-        // margin: 50px;
         position: relative;
         transition: .3s;
-            // transform:rotate(-10deg);
             padding: 10px;
             &:hover{
                 filter: saturate(200%) + drop-shadow(16px 16px 20px rgba(253, 223, 157, 0.548)); 
@@ -246,12 +220,10 @@ nav a:hover{
         img{
             border-radius: 10%;
             max-width:100%;
-            // width:500px;
         }
     }
     .text{
         flex-basis: 50%;
-        // margin-left: 20px;
         position: relative;
         }
         h5{
@@ -263,7 +235,6 @@ nav a:hover{
             font-family: 'Poppins', sans-serif;
         }
         h3{
-            // color: $white;
             font-size:50px;
             background: -webkit-linear-gradient(45deg ,$hover);
             -webkit-background-clip: text;
@@ -271,11 +242,9 @@ nav a:hover{
             margin-bottom: -10px;
         }
         h1{
-            // color: $white;
             background: -webkit-linear-gradient(-45deg ,$hover);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            // font-size: 100px;
             position: relative;
             transition: .3s;
             width: 500px;
@@ -330,7 +299,9 @@ nav a:hover{
     }
 
 @media (max-width: 1200px) {
-    .home .container {
+    .home {
+        margin-top:50px;
+        .container {
         flex-direction: column-reverse;
         .text{
             text-align: center;
@@ -358,6 +329,7 @@ nav a:hover{
             display: none;
             }
     }
+}
 }
 @media (min-width: 768px){
     .home .container {
@@ -391,6 +363,7 @@ nav a:hover{
             p{
                 width: fit-content;
                 margin: auto;
+                font-size: 14px;
             }
         }
     }
@@ -680,7 +653,6 @@ nav a:hover{
                 color: $main-color;
                 text-decoration: none;
                 padding: 10px 20px ;
-                // border-radius: 5px;
                 font-size: 18px;
                 font-weight: bold;
                 position: relative;
@@ -699,7 +671,6 @@ nav a:hover{
                 }
                 &:hover::before{
                     width:100%;
-                    // z-index: -1;
                 }
                 &:hover{
                     color: $white;
@@ -760,7 +731,6 @@ nav a:hover{
         > img{
             width: 500px;
             max-width: 100%;
-            // margin-left: 70px;
             border: 5px solid ;
             border-image:linear-gradient($hover) 10;
         }
@@ -776,9 +746,6 @@ nav a:hover{
                 color: $white;
                 font-size: 25px;
                 span{
-                    // font-size: 15px;
-                    // border: 1px solid rgb(255, 255, 255);
-                    // padding: 3px 5px;
                     margin-top: -10px;
                 }
             }
@@ -787,7 +754,6 @@ nav a:hover{
                 background-color: #eee;
                 position: relative;
                 border-radius: 20px;
-                // transition: 1s;
                 
                 span {
                     position: absolute;
@@ -842,13 +808,11 @@ nav a:hover{
 }
 
 .skills-d{
-    // padding-top:$pt;
     padding-bottom:$pb;
     position: relative;
     .Pen{
         width: 200px;
         height: 200px;
-        // margin-left: 30px;
         margin-top: 30px;
     }
     .Stl{
@@ -879,7 +843,6 @@ nav a:hover{
     .our-skills{
         flex: 1;
         .skills{
-            // padding-left: 30px;
             padding-bottom: 30px;
             h3{
                 display: flex;
@@ -888,9 +851,6 @@ nav a:hover{
                 color: $white;
                 font-size: 25px;
                 span{
-                    // font-size: 15px;
-                    // border: 1px solid rgb(255, 255, 255);
-                    // padding: 3px 5px;
                     margin-top: -10px;
                 }
             }
@@ -986,7 +946,6 @@ nav a:hover{
                     font-size: 22px;
                     background:$white;
                     align-items: center;
-                    // justify-content:space-between;
                     transition:.3s;
                     z-index: 1;
                     position: relative;
@@ -1021,7 +980,6 @@ nav a:hover{
                     transition: 1.3s;
                 }
                 &:hover{
-                    // transform: scale(1.1);
                     transition: 1.3s;
                 }
             }
@@ -1097,7 +1055,6 @@ nav a:hover{
     transition: 0.5s;
 }
 .p2{
-    // transform:translateX(-300%);
     transition: 1s;
 }
 
@@ -1144,7 +1101,6 @@ nav a:hover{
             height: 200px;
           }
           .send{
-            // display: block;
             display: flex;
             align-items: center;
             justify-content:space-evenly;
@@ -1154,7 +1110,6 @@ nav a:hover{
             color: $main-color;
             font-weight: bold;
             font-size: 20px;
-            // border: none;
             cursor: pointer;
             transition: .3s;
             margin: 0 auto 20px;
@@ -1225,16 +1180,10 @@ nav a:hover{
             font-size: 30px;
             text-align: center;
             margin-bottom: 30px;
-            // margin: auto;
-            // display:block;
             cursor: pointer;
             transform-style: preserve-3d;
-            // display: inline-flex;
             font-weight: bold;
             letter-spacing: 10px;
-            // span{
-            //     pointer-events: none;
-            // }
         }
         .social{
             display: flex;
@@ -1311,6 +1260,10 @@ nav a:hover{
     background: #021124;
     color: white;
 }
+.light-theme .home .text .flex-btn .second-btn:hover{
+    background: #FFB800;
+    color: #FF006B;
+}
 .light-theme .title-m{
     color:black;
 }
@@ -1381,7 +1334,6 @@ nav a:hover{
 .light-theme .home .container .images{
     &:hover{
         filter:saturate(150%) + drop-shadow(16px 16px 20px #1a1e2e73);
-        // filter: drop-shadow(16px 16px 20px rgb(255, 221, 147));
     }
 }
 
