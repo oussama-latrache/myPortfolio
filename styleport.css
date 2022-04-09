@@ -107,7 +107,7 @@ html {
 
 .header .container .logo {
   max-width: 100%;
-  width: 100px;
+  width: 60px;
 }
 
 .header .container .menu {
@@ -168,7 +168,7 @@ html {
     display: block;
   }
   .header .container .logo {
-    width: 90px;
+    width: 50px;
   }
 }
 
