@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #1a1e2e;
+  background-color: #021124;
   background-size: cover;
 }
 
@@ -88,7 +88,7 @@ h3 {
 .portflio .container .box:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  background: linear-gradient(-45deg, #FF006B, #d32e28);
+  background: linear-gradient(-45deg, #FF006B, #682cd6);
   -webkit-box-shadow: 4px 10px 20px 10px #00000044;
           box-shadow: 4px 10px 20px 10px #00000044;
 }
@@ -149,8 +149,8 @@ button.back::before {
   left: 0;
   width: 0%;
   height: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(#FF006B), to(#d32e28));
-  background: linear-gradient(to left, #FF006B, #d32e28);
+  background: -webkit-gradient(linear, right top, left top, from(#FF006B), to(#682cd6));
+  background: linear-gradient(to left, #FF006B, #682cd6);
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -166,7 +166,7 @@ button.back:hover {
 
 .one {
   position: absolute;
-  width: 470px;
+  width: 500px;
   max-width: 100%;
   display: none;
   -webkit-transition: .3s;
@@ -185,7 +185,7 @@ button.back:hover {
 
 .two {
   position: absolute;
-  width: 600px;
+  width: 700px;
   max-width: 100%;
   display: none;
   -webkit-transition: .3s;
@@ -204,7 +204,7 @@ button.back:hover {
 
 .three {
   position: absolute;
-  width: 470px;
+  width: 600px;
   max-width: 100%;
   display: none;
   -webkit-transition: .3s;
@@ -242,7 +242,7 @@ button.back:hover {
 
 .five {
   position: absolute;
-  width: 470px;
+  width: 700px;
   max-width: 100%;
   display: none;
   -webkit-transition: .3s;
@@ -261,7 +261,7 @@ button.back:hover {
 
 .six {
   position: absolute;
-  width: 550px;
+  width: 600px;
   max-width: 100%;
   display: none;
   -webkit-transition: .3s;
@@ -310,7 +310,8 @@ button.back:hover {
 }
 
 @media (max-width: 768px) {
-  .cursor, .cursor2 {
+  .cursor,
+  .cursor2 {
     display: none;
   }
 }
